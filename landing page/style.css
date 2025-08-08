@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: #4a90e2;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: white;
+  color: #4a90e2;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
+
+/* Sections */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+/* Features */
+.features {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.feature-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.feature-box {
+  flex: 1 1 30%;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 250px;
+  text-align: center;
+}
+
+/* Pricing */
+.pricing {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.pricing-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.pricing-card {
+  flex: 1 1 30%;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 250px;
+}
+
+.pricing-card .price {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.pricing-card ul li {
+  margin: 10px 0;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-boxes,
+  .pricing-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
